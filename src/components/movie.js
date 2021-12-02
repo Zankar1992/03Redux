@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { movieData } from '../store/actions';
 
 const Movie = (props) => {
-    const movies = useSelector(state => state.movies);
+    const movies = useSelector( state => state.movies );
     const dispatch = useDispatch();
 
 

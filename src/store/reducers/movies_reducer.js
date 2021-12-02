@@ -10,7 +10,7 @@ const DEFAULT_STORE = {
 }
 
 
-export default function appReducer(state=DEFAULT_STORE,action){
+export default function movies_reducer(state=DEFAULT_STORE,action){
     switch(action.type){
         case MOVIES_LIST:
             return {...state, moviesList: action.payload }

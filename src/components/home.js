@@ -36,7 +36,7 @@ class Home extends Component{
 }
 
 const mapStateToProps = (state) => {
-    return { wholestate: state.movies }
+    return {movies: state.movies }
 }
 
 export default connect(mapStateToProps)(Home);

@@ -10,7 +10,7 @@ import promiseMiddleware from 'redux-promise';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const createStoreWithMiddleware = composeEnhancers(
-  applyMiddleware(promiseMiddleware)
+applyMiddleware(promiseMiddleware)
 )(createStore);
 
 ReactDOM.render(
